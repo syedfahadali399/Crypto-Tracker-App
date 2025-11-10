@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div id="lower-main">
+            <div class="upper-design">
+                <h1 class="para">Crypto Tracker App</h1>
+                <form id="form">
+                    <div class="sub-form">
+                        <input class="input" type="text" name="input" id="get-coin-name" placeholder="Sreach coin....">
+                        <select class="select-design" id="get-cuurency-value">
+                            <option value="usd">USD</option>
+                            <option value="pkr">PKR</option>
+                            <option value="cny">CNY</option>
+                            <option value="try">TRY</option>
+                            <option value="eur">Euro</option>
+                            <option value="jpy">YEN</option>
+                        </select>
+                        <div id="suggestions" class="suggestions-list"></div>
+                    </div>
+                    <div class="sub-form">
+                        <button type="submit">Sreach</button>
+                        <button type="reset" id="clear">Clear</button>
+                    </div>
+                </form>
+            </div>
+            <div class="table-design" id="append-data">
+                <div class="table-layout" id="append-when-sreach">
+                    <p class="text-design">#</p>
+                    <p class="text-design">Coins</p>
+                    <p class="text-design">Price</p>
+                    <p class="text-design">24h %</p>
+                    <p class="market-cap">Market Cap</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="java.js"></script>
+</body>
+</html>
